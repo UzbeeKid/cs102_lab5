@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, a, run = 0, best = 0;
+    cin >> n;
+    while (n > 0) {
+        n = n - 1;
+        cin >> a;
+        if (a == 0) {
+            run = 0;
+            continue;
+        }
+        run++;
+        if (run > best) best = run;
+    }
+    cout << best;
+
+}
