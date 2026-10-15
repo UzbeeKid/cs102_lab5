@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int count = 0;
+    long long p = 5;
+    while (p <= n) {
+        count = count + n / p;
+        p = p * 5;
+    }
+    cout << count;
+}
+//TASK6
