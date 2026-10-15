@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, a, previous, hp = 1, mac = 1;
+    cin >> n >> previous;
+    while (--n > 0) {
+        cin >> a;
+        if (a > previous) hp++;
+        else hp = 1;
+        if (hp > mac) mac = hp;
+        previous = a;
+    }
+    cout << mac;
+}
